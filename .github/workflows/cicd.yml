@@ -50,6 +50,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
+        file: ./DockerFile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
 
